@@ -19,3 +19,9 @@ Scaling web processes... done, now running 1
 == Check the state
 Now, let’s check the state of the app’s processes:
 $ heroku ps
+
+
+
+== Custom domain
+heroku domains:add thirstyhead.com -a shielded-stream-4898.herokuapp.com
+heroku domains:add www.thirstyhead.com -a shielded-stream-4898.herokuapp.com

@@ -1,0 +1,53 @@
+bootstrap.txt
+
+
+volo add http://twitter.github.com/bootstrap/assets/bootstrap.zip
+
+http://bootswatch.com/spacelab/
+
+
+
+
+
+
+
+
+
+https://groups.google.com/forum/?fromgroups=#!topic/volojs/hMa3fG657ME
+----
+James Burke:
+
+The behavior you saw stems from two things: 
+
+1) It looks like you added bootstrap to a project that is an AMD-based 
+project (which is the default for a "volo create" call -- the default 
+project is set up for AMD. So for scripts that are not already AMD or 
+CommonJS-style modules, it prompts the user to set the dependencies 
+and exports. 
+
+However, for something like bootstrap that has lots of files, it is a 
+bit of overkill. You can manually avoid it by doing "volo add --amdoff 
+bootstrap". I'm also considering changing this behavior to just doing 
+one prompt up front that describes what will happen, or just turn it 
+off. 
+
+2) The zip file is pulled from the github source for that tag, where 
+it looks like the release they have on their website: 
+http://twitter.github.com/bootstrap/assets/bootstrap.zip 
+
+is a built version of that source. The idea though behind a volo add 
+is that so you can get the project, particularly the JS modules, in 
+subcomponents and then only build in what you need. 
+
+However if most people wanted the full built sources, we could put in 
+a volo.url package.json shim that points to the above zip file instead 
+pulling the code from source. For me though, I would want the separate 
+components. If you like, volo should be able to fetch that URL 
+directly for installation. 
+
+James 
+----
+
+you can use bootstrap/docs/assets/bootstrap.js.
+
+this is how bower acoomplish this as written in component.json (https://github.com/twitter/bootstrap/blob/master/component.json)

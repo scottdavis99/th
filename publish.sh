@@ -1,0 +1,1 @@
+cp -r www-built/* ../thirstyhead.github.com

@@ -1,0 +1,11 @@
+images.txt
+
+tablet:
+http://www.morguefile.com/archive/display/749529
+
+http:
+http://www.morguefile.com/archive/display/32827
+
+smartphone
+http://www.morguefile.com/archive/display/851789
+

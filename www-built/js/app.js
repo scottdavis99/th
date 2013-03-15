@@ -1,0 +1,1 @@
+define("app/main",["require"],function(e){console.log("Hello world")}),requirejs.config({baseUrl:"js/lib",paths:{app:"../app"}}),requirejs(["app/main"]),define("app",function(){});

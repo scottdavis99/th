@@ -1,0 +1,12 @@
+body {
+  padding: 50px;
+}
+.brand{
+	font-size: 3em;
+}
+.hero-unit h1{
+	font-size: 3em;
+} 
+.footer {
+	padding-top: 4em;
+}

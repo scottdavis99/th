@@ -1,0 +1,21 @@
+heroku.txt
+
+== Add Heroku
+$ heroku create --stack cedar
+Creating sharp-rain-871... done, stack is cedar
+http://sharp-rain-871.herokuapp.com/ | git@heroku.com:sharp-rain-871.git
+Git remote heroku added
+
+
+== Deploy your code
+$ git push heroku master
+
+== Scale Web Process
+Before looking at the app on the web, we’ll need to scale the web process:
+$ heroku ps:scale web=1
+Scaling web processes... done, now running 1
+
+
+== Check the state
+Now, let’s check the state of the app’s processes:
+$ heroku ps

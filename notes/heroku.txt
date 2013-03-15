@@ -2,8 +2,8 @@ heroku.txt
 
 == Add Heroku
 $ heroku create --stack cedar
-Creating sharp-rain-871... done, stack is cedar
-http://sharp-rain-871.herokuapp.com/ | git@heroku.com:sharp-rain-871.git
+Creating shielded-stream-4898... done, stack is cedar
+http://shielded-stream-4898.herokuapp.com/ | git@heroku.com:shielded-stream-4898.git
 Git remote heroku added
 
 

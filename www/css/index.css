@@ -1,7 +1,3 @@
-body {
-  padding: 50px;
-}
-
 .brand{
 	font-size: 3em;
 }
@@ -10,6 +6,30 @@ body {
 	font-size: 3em;
 } 
 
-.footer {
+.footer{
 	padding-top: 4em;
+}
+
+.navbar-inverse{
+	/* Matches bgcolor in flame logo */
+	background-color: #182C33;
+}
+
+.flame-color{
+  background-color: #F5D245;
+}
+
+/* lines up menu items with ThirstyHead.com */
+.navbar-nav{
+  margin-top: 1em;
+}
+
+/* customize active state of nav menu items */
+.navbar-inverse .navbar-nav > .active > a{
+  background-color: #182C33;   
+  border-bottom: dotted 1px #fff;
+}
+
+body{
+  padding-top: 80px;
 }

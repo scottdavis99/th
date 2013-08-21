@@ -33,3 +33,7 @@
 body{
   padding-top: 90px;
 }
+
+.coverArt{
+  border: 1px solid black;
+}

@@ -3,73 +3,90 @@
   <head>
     <title>ThirstyHead: Training Done Right</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="ThirstyHead is a training and consulting company that specializes in leading-edge technology solutions like HTML 5, mobile development, Node.js, SmartTV development, web mapping, NoSQL, Groovy, and Grails.">
+    <meta name="author" content="Scott Davis (scott@thirstyhead.com)">
+    <meta name="keywords" content="training, consulting, html5, mobile, node.js, smarttv, nosql, groovy, grails">
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
 		<script src="js/lib/html5shiv.js"></script>
     <![endif]-->
-
-
-
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link href="css/index.css" rel="stylesheet" media="screen">  
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-13250687-1']);
+      _gaq.push(['_trackPageview']);
 
-    <script data-main="js/app" src="js/lib/require.js"></script>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>      
   </head>
   <body>
-    <div class="container">
 
       <!-- nav -->
-    	<div class="navbar navbar-fixed-top navbar-inverse">
-        <div class="navbar-inner">
-          <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="/">ThirstyHead</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="img/logo.jpg" title="ThirstyHead: Training Done Right" alt="thirstyhead logo" width="50px">ThirstyHead</a>
         </div>
-      </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="training.html">Training</a></li>
+            <li><a href="consulting.html">Consulting</a></li>
+            <li><a href="book.html">Books</a></li>
+            <li><a href="video.html">Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>          
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+      <!-- nav -->
 
 
 
 
 
+    <div class="container">
 
-      <div class="hero-unit text-center">
+      <div class="jumbotron">
         <div class="row">
                 
-          <div class="span4">
-            <img class="img-rounded" src="img/smartphone.medium.jpg" alt="ThirstyHead: Training Done Right" />
+          <div class="col-sm-4 hidden-xs">
+            <img class="img-rounded img-responsive" src="img/smartphone.medium.jpg" alt="tablet image" />
           </div>
 
 
-          <div class="span6">  
-            <h1 class="alert-block">ThirstyHead: Training Done Right</h1>
-            <p class="alert-block">
+          <div class="col-sm-6">  
+            <h2>ThirstyHead: <i>Training Done Right</i></h2>
+            <hr style="border: solid #ccc 1px;">
+            <p>
               Is your website ready for mobile?
             </p>
 
-            <p class="alert-block">
+            <p>
               Do you need to learn the latest web technologies like HTML 5 and Node.js?
             </p>
 
 
-            <p class="alert-block">              
-              ThirstyHead is a training and consulting company that specializes in leading-edge technology solutions like HTML 5, mobile development, SmartTV development, NoSQL, Groovy, and Grails.
+            <p>              
+              ThirstyHead is a <a href="training.html">training</a> and <a href="consulting.html">consulting</a> company that specializes in leading-edge technology solutions like HTML 5, mobile development, Node.js, SmartTV development, web mapping, NoSQL, Groovy, and Grails.
             </p>
 
           </div> 
 
         </div> 
-      </div><!-- .hero-unit -->
+      </div><!-- .jumbotron -->
 
 
 
@@ -87,5 +104,19 @@
   </div> <!-- container -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/lib/bootstrap.js"></script>
+    <script>
+      var navActiveHandler = function(){
+        $('ul.nav li a').click(function (e) {
+          $('ul.nav li').removeClass('active');
+          $(this).parent().addClass('active');                
+        });                    
+      }
+
+      $(document).ready(function () {
+        navActiveHandler();
+      });
+
+
+    </script>
   </body>
 </html>
